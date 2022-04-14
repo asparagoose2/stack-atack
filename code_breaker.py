@@ -34,17 +34,7 @@ def main():
                 password = alt
                 break
         i += 1
-# main()
 
 
 main()
-# user = "12"
-# alt = "000000"
-# guess_time = timeit.repeat(lambda: run_program(alt,user), number=10)
-# print(min(guess_time))
-# start_time = time.time()
-# res = run_program('paas',12)
-# end_time = time.time()
-# print("Time taken: {}".format(end_time - start_time))
-# is_logged_in = 'Not' not in res
-# print("Is logged in: " + str(is_logged_in))
+

@@ -134,20 +134,23 @@ void print_all_pass() {
 }
 
 void run() {
+    char buffer[2] = {0};
     while(1) {
         printf("\n");
         printf("1. Login\n");
         printf("2. Exit\n");
         int choice;
-        scanf("%d", &choice);
+        gets(buffer);
+        choice = atoi(buffer);
+        // scanf("%d", &choice);
         fflush(stdin);
-        getchar();
+        // getchar();
         switch(choice) {
             case 1:
                 printf("Login\n");
                 break;
             case 2:
-                exit(0);
+                return;
                 break;
             default:
                 printf("Invalid choice!\n");
